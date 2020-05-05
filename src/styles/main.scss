@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 750px;
 
   div {
     display: flex;
@@ -51,6 +51,6 @@ $week: "mon", "tue", "wed", "thu", "fri", "sat", "sun";
 
 @for $i from 0 through 6 {
   .calendar-#{nth($week, $i+1)} div:first-child {
-    margin-left: 101px + $i;
+    margin-left: 101px * $i;
   }
 }
